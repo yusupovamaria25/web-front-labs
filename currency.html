@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <title>Курс валют</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script defer src="currency.js"></script>
+</head>
+<body>
+  <aside class="sidebar">
+    <nav>
+      <a href="index.html">О компании</a>
+      <a href="news.html">Новости</a>
+      <a href="currency.html">Курс валют</a>
+      <a href="contacts.html">Контакты</a>
+      <a href="video.html">Видео</a>
+    </nav>
+  </aside>
+  <main class="content">
+    <h1>Курс китайского юаня (CNY)</h1>
+    <div>
+      <input type="number" id="rub" placeholder="Сумма в рублях" />
+      <button onclick="convertToCNY()">Перевести в CNY</button>
+      <p id="cny-result"></p>
+    </div>
+    <canvas id="rateChart" width="400" height="200"></canvas>
+  </main>
+</body>
+</html>
